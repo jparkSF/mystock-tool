@@ -1,0 +1,63 @@
+.login {
+  display: flex;
+  align-items: center;
+}
+
+.cover-image {
+  background-image: url(https://d2ue93q3u507c2.cloudfront.net/assets/generated_assets/94977d34f99015525dcd0fc9987fcbe6.png);
+  flex: 1;
+  height: 100vh;
+}
+
+.form-container {
+  display: flex;
+  flex: 1;
+  height: 100vh;
+  align-items: center;
+}
+
+.login-form-box {
+  height: auto;
+  width: 400px;
+  position: relative;
+  left: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.session-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.signin-button {
+  flex: 2;
+  margin-right: 4px;
+}
+
+.demo-button {
+  flex: 1;
+}
+
+.errors-index-login {
+  height: 80px;
+  position: relative;
+}
+
+.errors-list-item {
+  font-family: $roboto;
+  color: red;
+  font-size: 16px;
+  text-decoration: bold;
+}
+
+#login-error {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+#login-to-signup {
+  margin-top: 14px;
+}

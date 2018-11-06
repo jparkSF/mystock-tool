@@ -1,0 +1,38 @@
+.stock-index-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  transition: background-color 400ms;
+}
+
+.stock-index-item:hover {
+  background-color: $lightest-gray;
+}
+
+.stock-index-item div {
+  display: flex;
+  flex-direction: column;
+}
+
+.stock-num-shares {
+  color: $light-gray;
+  padding-top: 6px;
+  font-size: 10px;
+}
+
+.chart-thumb {
+  width: 30%;
+  height: auto;
+}
+
+.stock-price {
+  align-items: center;
+  text-align: center;
+  width: 90px;
+  line-height: 30px;
+  font-size: 18px;
+}

@@ -1,0 +1,54 @@
+.app-body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+}
+
+.app-main {
+  justify-content: center;
+}
+
+.page {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 45px;
+  background-color: white;
+}
+
+@media only screen and (max-width: 1500px)  {
+  .page {
+    width: 1100px;
+    left: calc(50% - 500px);
+  }
+}
+
+.main-content {
+  flex: 5;
+  margin-right: 6%;
+  box-sizing: border-box;
+}
+
+.sidebar-container {
+  width: 28%;
+}
+
+.sidebar {
+  background-color: white;
+  box-sizing: border-box;
+  box-shadow: 0 0 30px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  z-index: 2000;
+}
+
+.sidebar-header {
+  padding: 18px 20px;
+  border-bottom: 1px solid $lightest-gray;
+  justify-content: space-between;
+}

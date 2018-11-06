@@ -1,0 +1,145 @@
+h1 {
+  font-family: $thin;
+  font-size: 48px;
+	text-align: left;
+  margin-top: 30px;
+	margin-bottom: 20px;
+	font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-family: $roboto;
+  font-size: 30px;
+	text-align: left;
+  margin-top: 30px;
+	margin-bottom: 20px;
+	font-weight: bold;
+  letter-spacing: 1px;
+}
+
+
+h3 {
+  font-family: $roboto;
+  text-align: left;
+	margin-bottom: 20px;
+	font-weight: 200;
+  letter-spacing: 1px;
+}
+
+h4 {
+  font-family: $roboto;
+  text-align: left;
+  font-size: 14px;
+  letter-spacing: 1px;
+	font-weight: bold;
+}
+
+em {
+  font-family: $roboto;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+label {
+  font-family: $roboto;
+  font-size: 14px;
+  text-align: left;
+  margin-bottom: 10px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+span {
+  font-family: $roboto;
+  font-size: 14px;
+  text-align: left;
+}
+
+strong {
+  color: $green;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+a {
+  font-family: $roboto;
+  // color: $green;
+  font-weight: 500;
+  // text-decoration: underline;
+}
+
+button {
+  font-family: $roboto;
+}
+
+.gray-input {
+  border: 1px solid transparent;
+  background-color: $lightest-gray;
+  padding: 16px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: $roboto;
+  font-weight: lighter;
+  border-radius: 4px;
+  transition: border-color 200ms;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.gray-input:hover {
+  border: 1px solid $light-gray;
+}
+
+.gray-input:focus {
+  border: 1px solid $green;
+  background-color: white;
+}
+
+.white-input {
+  border: 1px solid $light-gray;
+  background-color: white;
+  padding: 16px;
+  color: $light-gray;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: $roboto;
+  font-weight: lighter;
+  border-radius: 4px;
+  transition: border-color 200ms;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.white-input::placeholder {
+  color: $light-gray;
+}
+
+.white-input:focus {
+  border: 1px solid $green;
+  background-color: white;
+}
+
+input[type="submit"], input[type="button"] {
+  border-radius: 8px;
+  background-color: $green;
+  padding: 16px;
+  font-size: 16px;
+  font-family: $roboto-condensed;
+  letter-spacing: 1px;
+  text-align: center;
+  color: white;
+  transition: background-color 0ms;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover {
+  background-color: $light-green;
+  border: 0px;
+  cursor: pointer;
+}
+
+input[type="submit"]:disabled, input[type="button"] {
+  border: 0px;
+  background-color: $green;
+}

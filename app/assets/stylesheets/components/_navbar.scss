@@ -1,0 +1,144 @@
+.navbar {
+  height: 65px;
+  min-width: 1200px;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 60px ;
+  box-sizing: border-box;
+  z-index: 1000;
+  overflow: visible;
+  transition: all 0.5s linear;
+  background-color: white;
+}
+
+#navbar-container.active {
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+.logo-navbar {
+  width: 26px;
+  height: 26px;
+  transition: all .2s ease;
+}
+
+.logo-navbar:hover {
+  fill: $green;
+  cursor: pointer;
+}
+
+.logo-navbar:active {
+  fill: $light-green;
+  cursor: pointer;
+}
+
+.navbar-left {
+  width: 550px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-bar {
+  width: 350px;
+  height: 100%;
+}
+
+.navbar-right {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.nav-link {
+  margin-left: 40px;
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 8px 0;
+}
+
+.nav-link:hover {
+  color: $green;
+  -webkit-transition: 300ms ease;
+}
+
+.nav-link-selected {
+  border-bottom: 3px solid;
+}
+
+#search {
+  width: 350px;
+  height: 100%;
+  margin-bottom: 0px;
+  border: 1px solid $lightest-gray;
+  color: $light-gray;
+  text-indent: 22px;
+}
+
+#search:focus {
+  border: 1px solid $light-gray;
+}
+
+.fa-search {
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+  color: $light-gray;
+}
+
+.search-container {
+  position: relative;
+  height: 100%;
+}
+
+.search-results {
+  position: absolute;
+  width: 100%;
+  top: 53px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+.search-result-li {
+  width: 100%;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: white;
+  // border-bottom: 1px solid $lightest-gray;
+}
+
+.search-result-li:hover {
+  background-color: $lightest-gray;
+  transition: all 0.5s linear;
+}
+
+.search-result-name {
+  color: $gray;
+}
+
+.search-result-company {
+  display: flex;
+  align-items: baseline;
+}
+
+.search-result-symbol {
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.search-results .search-result-li:last-child {
+  border-bottom: 0px;
+}
+
+.search-result-marketprice {
+  font-size: 16px;
+}
