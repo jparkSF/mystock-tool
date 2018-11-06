@@ -80,6 +80,7 @@ test:
 #
 production:
   <<: *default
-  database: mystock_tool_production
-  username: mystock_tool
+  # database: mystock_tool_production
+  database: mystock_tool_development
+  # username: mystock_tool
   # password: <%= ENV['STOCKOVERFLOW_DATABASE_PASSWORD'] %>
