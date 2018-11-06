@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: StockOverflow_production
-  username: StockOverflow
-  password: <%= ENV['STOCKOVERFLOW_DATABASE_PASSWORD'] %>
+  # username: StockOverflow
+  # password: <%= ENV['STOCKOVERFLOW_DATABASE_PASSWORD'] %>
