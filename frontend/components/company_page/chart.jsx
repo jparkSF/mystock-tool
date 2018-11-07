@@ -142,7 +142,7 @@ class ChartComponent extends React.Component {
     if (!companyStockData) {
       this.props.fetchRealtimeIntradayData(symbol);
       this.props.fetchRealtimeDailyData(symbol);
-      console.log(this.props.companyStockData)
+      
     }
   }
 
@@ -309,9 +309,14 @@ class ChartComponent extends React.Component {
           </div>
         );
       }
+
+      
       return (
         <div className="chart">
           {canvas}
+          {console.log("=======")}
+          {console.log(this.state.historicalPriceDelta)}
+          {console.log(this.state.historicalPercDelta)}
           <ChartOverlayContainer
             changeActive={this.changeActive}
             historicalPriceDelta={this.state.historicalPriceDelta}
