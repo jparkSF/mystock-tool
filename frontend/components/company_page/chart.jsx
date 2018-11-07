@@ -297,7 +297,7 @@ class ChartComponent extends React.Component {
               <div className="sk-circle2 sk-child"></div>
               <div className="sk-circle3 sk-child"></div>
               <div className="sk-circle4 sk-child"></div>
-              <div className="sk-circle5 sk-child"></div> 
+              <div className="sk-circle5 sk-child"></div>
               <div className="sk-circle6 sk-child"></div>
               <div className="sk-circle7 sk-child"></div>
               <div className="sk-circle8 sk-child"></div>
@@ -314,7 +314,9 @@ class ChartComponent extends React.Component {
       return (
         <div className="chart">
           {canvas}
-        
+          {console.log("======")}
+          {console.log(this.state.historicalPriceDelta)}
+          {console.log(this.state.historicalPercDelta)}
           <ChartOverlayContainer
             changeActive={this.changeActive}
             historicalPriceDelta={this.state.historicalPriceDelta}
