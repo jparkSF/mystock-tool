@@ -23,7 +23,7 @@ export const fetchRealtimeIntradayData = sym => (
 export const fetchRealtimeDailyData = sym => (
   $.ajax({
     headers: {
-      "Authorization": "Bearer " + new Buffer(API_OPTIONS.intrinioApiKey).toString('base64'),  
+      "Authorization": `Bearer ${API_OPTIONS.intrinioApiKey}`
     },
     
     url: `https://api.intrinio.com/historical_data?identifier=GOOGL&start_date=2014-02-27&item=adj_close_price&sort_order=asc`,
