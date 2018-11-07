@@ -7,6 +7,7 @@ import {
 class ChartOverlay extends React.Component {
   constructor(props) {
     super(props);
+    
     this.state = {
       watching: this.props.company.current_user_watching,
       activeId: "1",
@@ -109,6 +110,7 @@ class ChartOverlay extends React.Component {
   }
 
   render() {
+    console.log(this.props)
     const {
       company, chartData, intradayLoading,
       historicalPriceDelta, historicalPercDelta
