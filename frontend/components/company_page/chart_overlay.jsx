@@ -110,11 +110,14 @@ class ChartOverlay extends React.Component {
   }
 
   render() {
-    // console.log(this.props)
+        
+    console.log("=======")
+    console.log(this.props)
     const {
       company, chartData, intradayLoading,
       historicalPriceDelta, historicalPercDelta
     } = this.props;
+
     const { timeSeries } = this.state;
     const companyUrl = `/company/${company.symbol};`;
     const priceChange = this.stringifyPriceChange(historicalPriceDelta);
