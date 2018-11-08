@@ -45,6 +45,8 @@ class ChartOverlay extends React.Component {
   }
 
   changeChart(strNum) {
+    console.log("in change chart")
+    console.log(strNum)
     this.props.changeActive(strNum);
     const { activeId } = this.state;
     let currentlyActive = document.getElementById(activeId);
@@ -76,6 +78,8 @@ class ChartOverlay extends React.Component {
   }
 
   stringifyPriceChange(historicalPriceDelta) {
+    console.log("in stringify price change")
+    console.log(historicalPriceDelta)
     let priceChange;
     if (this.state.intradayLoading) {
       priceChange = "$0.00";

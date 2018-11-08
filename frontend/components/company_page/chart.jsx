@@ -73,14 +73,34 @@ class ChartComponent extends React.Component {
   }
 
   timesWithinRange(timeArr, minDate) {
+    console.log("@@@@@@@@@@@@@@@@@@@@@@@")
+    // console.log("inside timeWithinRange")
+    
+    console.log(timeArr)
+    console.log(minDate)
+    // console.log("outside timeWithinRange")
+    
     const now = new Date;
     const prevDate = new Date(minDate);
-    return timeArr.filter(dateStr => {
+    // console.log(now)
+    // console.log(timeArr[0])
+    // console.log(new Date(timeArr[0]) < now, "testing..." )
+    console.log("@@@@@@@@@@@@@@@@@@@@@@@")
+    let temp = timeArr.filter(dateStr => {
       const date = new Date(dateStr);
+    
       if (date > prevDate && date < now) {
+     
+        
         return date;
       }
     });
+    // console.log('temp begin')
+    // console.log(temp)
+    
+
+    // console.log('temp end')
+    return temp
   }
 
   pricesWithinRange(prices, range) {
@@ -95,6 +115,9 @@ class ChartComponent extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
+    console.log("nextProps begin")
+    console.log(nextProps)
+    console.log("nextProps end")
     if (
       ( nextProps.companyStockData &&
       nextProps.companyStockData.intraday &&
@@ -154,14 +177,28 @@ class ChartComponent extends React.Component {
     } = this.state;
     const closingPrice = this.closingPrice();
     const lastPrice = (timeSeries === "today") ? closingPrice : graphPricePoints[0];
+    
     const latestPrice = intradayPricePoints[intradayPricePoints.length - 1];
     const priceDiff = parseFloat(latestPrice) - parseFloat(lastPrice);
     const percDiff = (priceDiff / parseFloat(lastPrice)) * 100;
+    // console.log("*******")
+    // console.log(timeSeries)
+    // console.log("closing price", closingPrice)
+    // console.log(latestPrice)
+    
+    // console.log(graphPricePoints[0])
+    
+    // console.log(graphPricePoints)
+
+    // console.log("*******")
     this.setState({historicalPriceDelta: priceDiff, historicalPercDelta: percDiff});
     return priceDiff;
   }
 
   renderChart() {
+    // console.log('in renderChart')
+    // console.log(this.state)
+    // console.log('after this.state')
     const { graphPricePoints, graphTimePoints } = this.state;
     const closingPrice = this.closingPrice();
     const lastIdx = graphPricePoints.length - 1;
@@ -221,25 +258,42 @@ class ChartComponent extends React.Component {
   }
 
   changeActive(strNum) {
+    // console.log('in change active')
+    // console.log(strNum, typeof strNum)
+    // console.log(this.state.intradayTimePoints);
+    // console.log(this.state.intradayPricePoints);
+    // console.log(this.state.dailyTimePoints);
+    // console.log(this.state.dailyPricePoints);
     const now = new Date();
     let minDate, timeArr, prices, timeSeries;
     if (strNum === "1") {
+      // console.log("inside today")
       // Today
       minDate = this.firstMin();
       timeArr = this.state.intradayTimePoints;
       prices = this.state.intradayPricePoints;
       timeSeries = "today";
     } else if (strNum === "2") {
+      // console.log("inside week")
       // 1W
       minDate = moment(now).subtract(1, 'weeks').format("YYYY-MM-DD HH:mm:ss");
+      // console.log(minDate, "min date")
       timeArr = this.state.intradayTimePoints;
       prices = this.state.intradayPricePoints;
       timeSeries = "1W";
     } else if (strNum === "3") {
+      // console.log("inside 1M")
       // 1M
       minDate = moment(now).subtract(1, 'months').format("YYYY-MM-DD");
+      // console.log("before minDate")
+      // console.log(minDate)
+      // console.log("after minDate")
       timeArr = this.state.dailyTimePoints;
       prices = this.state.dailyPricePoints;
+
+      // console.log(timeArr)
+      // console.log(prices)
+      // console.log('end of strNum === 3')
       timeSeries = "1M";
     } else if (strNum === "4") {
       // 3M
@@ -263,14 +317,22 @@ class ChartComponent extends React.Component {
     const idxRange = this.idxRange(timeArr, minDate);
     const timesWithinRange = this.timesWithinRange(timeArr, minDate);
     const pricesWithinRange = this.pricesWithinRange(prices, idxRange);
+    // console.log("test begin")
+    // console.log(timeArr, minDate);
+    // console.log("test end")
+    // console.log("!!!!!!!!")
+    // console.log("pricesWithinRange", pricesWithinRange)
     this.setState({
       graphTimePoints: timesWithinRange,
       graphPricePoints: pricesWithinRange,
       idxRange: idxRange,
       timeSeries,
     }, () => {
+      // console.log('after setstate')
+      // console.log(this.state);
       this.renderChart();
     });
+   
   }
 
   render() {
@@ -314,9 +376,9 @@ class ChartComponent extends React.Component {
       return (
         <div className="chart">
           {canvas}
-          {console.log("======")}
+          {/* {console.log("in chart jsx")}
           {console.log(this.state.historicalPriceDelta)}
-          {console.log(this.state.historicalPercDelta)}
+          {console.log(this.state.historicalPercDelta)} */}
           <ChartOverlayContainer
             changeActive={this.changeActive}
             historicalPriceDelta={this.state.historicalPriceDelta}
