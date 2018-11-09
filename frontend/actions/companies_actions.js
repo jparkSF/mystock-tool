@@ -86,8 +86,6 @@ export const fetchRealtimeDailyData = sym => dispatch => {
   dispatch(startLoadingDailyPrices());
   return APIUtil.fetchRealtimeDailyData(sym)
     .then(data => {
-        console.log('data');
-        console.log(data); 
       return dispatch(receiveDailyData(data, sym))
     }
   );

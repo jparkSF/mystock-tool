@@ -22,10 +22,8 @@ export const fetchRealtimeIntradayData = sym => (
 
 export const fetchRealtimeDailyData = sym => {
   let pageSize = 2000
-  console.log('@@@@@@@@@@@@@@@')
-  console.log(`page size is: ${pageSize}`)
-  console.log('@@@@@@@@@@@@@@@')
-  
+  const window.pageSize = pageSize;
+
   return (
       $.ajax({
       headers: {
