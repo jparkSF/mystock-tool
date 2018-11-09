@@ -2,7 +2,7 @@
 
 [Link to site](https://mystock-tool.herokuapp.com/#/)
 
-StockOverflow is a full-stack financial trading web application that
+My Stock Tool is a full-stack financial trading web application that
 combines realtime data with hypothetical funds allowing users to
 practice day-trading without any financial risk. It was modeled and
 influenced by Robinhood's unreleased desktop web application.
@@ -111,7 +111,7 @@ end
 + Implement graph logic below to properly and accurately show
   user's portfolio history
 
-![Homepage](https://github.com/jparksf/mystock-tool/raw/datavis/wireframes/Wireframes%20Graph3.jpg?raw=true)
+![Homepage](https://github.com/jparksf/mystock-tool/wireframes/Wireframes%20Graph3.jpg)
 
 
 [Link to site](https://mystock-tool.herokuapp.com/#/)
