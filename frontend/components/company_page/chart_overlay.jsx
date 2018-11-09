@@ -13,6 +13,7 @@ class ChartOverlay extends React.Component {
       activeId: "1",
       timeSeries: "Today",
     };
+    
   }
 
   componentDidMount() {
