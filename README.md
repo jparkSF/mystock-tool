@@ -111,7 +111,10 @@ end
 + Implement graph logic below to properly and accurately show
   user's portfolio history
 
-![Homepage](https://github.com/jparksf/mystock-tool/wireframes/Wireframes%20Graph3.jpg)
+![Homepage](https://github.com/jparkSF/mystock-tool/blob/master/wireframes/Wireframes%20Graph3.jpg?raw=true)
+
+     
+      
 
 
 [Link to site](https://mystock-tool.herokuapp.com/#/)
