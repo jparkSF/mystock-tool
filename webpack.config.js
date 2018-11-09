@@ -10,6 +10,8 @@ var prodPlugins = [
     }
   }),
   new webpack.optimize.UglifyJsPlugin({
+    sourceMap: true,
+    minimize: true,
     compress: {
       warnings: false,
       
