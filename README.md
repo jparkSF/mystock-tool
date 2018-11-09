@@ -1,4 +1,4 @@
-# StockOverflow
+# My Stock Tool
 
 [Link to site](https://mystock-tool.herokuapp.com/#/)
 
