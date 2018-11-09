@@ -1,6 +1,6 @@
 # StockOverflow
 
-[Link to site](https://stocksoverflow.herokuapp.com/#/)
+[Link to site](https://mystock-tool.herokuapp.com/#/)
 
 StockOverflow is a full-stack financial trading web application that
 combines realtime data with hypothetical funds allowing users to
@@ -42,7 +42,7 @@ prices up to five years.
 + The graph changes color based on whether the company has a positive
   or negative change in price value for the specific time frame
 
-![Data Visualization](https://github.com/avelasco920/stock-overflow/blob/master/wireframes/Chart.gif?raw=true)
+![Data Visualization](https://github.com/jparksf/mystock-tool/blob/master/wireframes/Chart.gif?raw=true)
 
 ### Trading On The Site
 
@@ -52,7 +52,7 @@ sell shares of the specific company. Users can easily see how much their
 trade will cost/make them with a responsive calculation. They can easily
 compare the total with their current buying power in the same form.
 
-![Trading](https://github.com/avelasco920/stock-overflow/blob/master/wireframes/Trade.gif?raw=true)
+![Trading](https://github.com/jparksf/mystock-tool/blob/master/wireframes/Trade.gif?raw=true)
 
 
 ## Select Code Snippets
@@ -111,7 +111,7 @@ end
 + Implement graph logic below to properly and accurately show
   user's portfolio history
 
-![Homepage](https://github.com/avelasco920/stock-overflow/raw/datavis/wireframes/Wireframes%20Graph3.jpg?raw=true)
+![Homepage](https://github.com/jparksf/mystock-tool/raw/datavis/wireframes/Wireframes%20Graph3.jpg?raw=true)
 
 
-[Link to site](https://stocksoverflow.herokuapp.com/#/)
+[Link to site](https://mystock-tool.herokuapp.com/#/)
