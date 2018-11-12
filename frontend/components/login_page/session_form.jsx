@@ -59,7 +59,7 @@ class SessionForm extends React.Component {
       <div className="session-form">
         <form onSubmit={this.handleSubmit} className="login-form-box">
 
-          <h2>Welcome to StockOverflow</h2>
+          <h2>My Stock Tool</h2>
 
           <label htmlFor="login-input">Username</label>
           <input type="text"

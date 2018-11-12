@@ -21,8 +21,8 @@ Users Graph
 
 ### Wireframes
 Company Page
-![Company Page](https://github.com/avelasco920/stock-overflow/blob/datavis/wireframes/Wireframes%20Graph.jpg?raw=true)
-![Zoomed In](https://github.com/avelasco920/stock-overflow/blob/datavis/wireframes/Wireframes%20Graph2.jpg?raw=true)
+![Company Page](https://github.com/jparkSF/mystock-tool/blob/master/wireframes/Wireframes%20Graph.jpg)
+![Zoomed In](https://github.com/jparkSF/mystock-tool/blob/master/wireframes/Wireframes%20Graph2.jpg)
 
 ### Architecture and Technologies
 This project will be implemented with the following technologies:
@@ -43,7 +43,7 @@ This project will be implemented with the following technologies:
 - [ ] Make function calls for various time ranges
 
 **Day 2**
-![Portfolio Value](https://github.com/avelasco920/stock-overflow/blob/datavis/wireframes/Wireframes%20Graph3.jpg?raw=true)
+![Portfolio Value](https://github.com/jparkSF/mystock-tool/blob/master/wireframes/Wireframes%20Graph3.jpg)
 - [ ] Create functions to calculate portfolio value based on logic above. Above graphics are used only as a representation of logic, not aesthetic/layout.
 - [ ] Integrate api calls with the different specific time functions
 
