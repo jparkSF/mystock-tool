@@ -10,6 +10,7 @@ class ChartOverlay extends React.Component {
   }
 
   render() {
+    
     const { user } = this.props;
     return (
       <div className="chart-overlay">

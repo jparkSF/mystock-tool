@@ -15,6 +15,7 @@ class StockIndex extends React.Component {
   }
 
   render() {
+    
     const { companiesInvested, loading } = this.state;
     if (loading) {
       return (<div></div>);

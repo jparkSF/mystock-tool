@@ -226,6 +226,7 @@ class ChartComponent extends React.Component {
   }
 
   render() {
+    
     const { user } = this.props;
     const { timeSeries } = this.state;
     const priceChange = this.stringifyPriceChange();

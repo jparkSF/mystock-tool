@@ -21,16 +21,17 @@ export const fetchRealtimeIntradayData = sym => (
 );
 
 export const fetchRealtimeDailyData = sym => {
-  let pageSize = 2000
+  let pageSize = 1000
   window.pageSize = pageSize;
-
+  
+  
   return (
       $.ajax({
       headers: {
         "Authorization": `Bearer ${API_OPTIONS.intrinioApiKey}`
       },
       
-      url: `https://api.intrinio.com/historical_data?identifier=${sym}&start_date=2014-02-27&item=adj_close_price&page_size=${pageSize}&sort_order=asc`,
+        url: `https://api.intrinio.com/historical_data?identifier=${sym}&start_date=2014-02-27&item=adj_close_price&page_size=${pageSize}&sort_order=asc`,
       type: "GET",
       dataType: "JSON",
       

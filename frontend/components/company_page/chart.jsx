@@ -132,14 +132,17 @@ class ChartComponent extends React.Component {
     {
       const { symbol } = nextProps.match.params;
       if (!nextProps.companyStockData) {
+        
         this.props.fetchRealtimeIntradayData(symbol)
           .then(() => this.renderChart());
+          
         this.props.fetchRealtimeDailyData(symbol);
       }
     }
   }
 
   componentWillMount() {
+    
     this.fetchRealtimePrices();
   }
 
